@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.outer {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+canvas {
+    margin: auto;
+}
+.inner {
+    background-color: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+}
+.interface {
+    background-color: white;
+    height: 140px;
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 4px black solid;
+    display: flex;
+}
+.attacks {
+    width: 66%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+button {
+    border: 0;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #bbb;
+}
+.types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    border-left: 4px black solid;
+}
+
+.topHealth {
+    background-color: white;
+    width: 250px;
+    position: absolute;
+    border: 4px black solid;
+    padding: 12px;
+}
+.draggle {
+    top: 50px;
+    left: 50px;
+}
+.emby {
+    top: 330px;
+    right: 50px
+}
+.allHealths {
+    position: relative;
+}
+.healthBar {
+    height: 5px;
+    background-color: #bbb;
+}
+.healthLost {
+    margin-top: 10px;
+}
+.healthGreen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: green;
+}
+.dialogue {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: 12px;
+    display: none;
+    cursor: pointer;
+}
+.userInterface {
+    display: none;
+}

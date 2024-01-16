@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Pokemon</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner" id="overlapDiv"></div>
+        <canvas></canvas>
+        <div class="userInterface">
+            <div class="topHealth draggle">
+                <h1>Draggle</h1>
+                <div class="allHealths">
+                    <div class="healthBar healthLost"></div>
+                    <div id="enemyHealth" class="healthBar healthGreen"></div>
+                </div>
+            </div>
+    
+            <div class="topHealth emby">
+                <h1>Emby</h1>
+                <div class="allHealths">
+                    <div class="healthBar healthLost"></div>
+                    <div id="embyHealth" class="healthBar healthGreen"></div>
+                </div>
+            </div>
+    
+            <div class="interface">
+                <div class="dialogue"></div>
+                <div class="attacks">
+                    <!-- populate buttons in javascript files -->
+                </div>
+                <div class="types">
+                    <h1>Attack Type</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./data/audio.js"></script>
+    <script src="./data/battlePlace.js"></script>
+    <script src="./data/collisions.js"></script>
+    <script src="./data/images.js"></script>
+    <script src="./data/attacks.js"></script>
+    <script src="./data/monsters.js"></script>
+    <script src="./classes.js"></script>
+    <script src="./index.js"></script>
+    <script src="./battle.js"></script>
+</body>
+</html>
